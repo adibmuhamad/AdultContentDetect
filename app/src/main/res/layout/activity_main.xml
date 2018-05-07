@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="com.latihan.adib.adultcontentdetection.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_above="@+id/txtDesc"
+        android:paddingBottom="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="600dp" />
+    
+    <Button
+        android:id="@+id/btnProses"
+        android:text="Proses"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnGetPic"
+        android:text="Get Picture"
+        android:layout_above="@id/btnProses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    
+    <TextView
+        android:id="@+id/txtDesc"
+        android:layout_above="@+id/btnGetPic"
+        android:text="Description..."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    
+    <LinearLayout
+        android:layout_above="@+id/txtDesc"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <RadioButton
+            android:id="@+id/isAdult"
+            android:text="Is Adult"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/isRacy"
+            android:text="Is Racy"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/isGood"
+            android:text="Is Good"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        
+    </LinearLayout>
+
+</RelativeLayout>
